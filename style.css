@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #AF8041;
+}
+
+h1 {
+  border-bottom: 1px solid #051507;
+}
+
+.main-title {
+  background-color: rgb(255, 255, 255, 0.5);
+
+}
+
+article {
+  background-image: url("https://image.yes24.com/goods/111086542/XL");
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-size: 100% 100%;
+}
+
+.web-name {
+  text-decoration-line: none;
+  color: black;
+  background-color: #AF8041;
+  display: inline-block;
+
+}
+
+.reviwe-title {
+  text-decoration-line: none;
+  color: black;
+  background-color: #AF8041;
+  display: inline-block;
+}
