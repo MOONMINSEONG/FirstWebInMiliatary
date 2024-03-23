@@ -2,40 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0px;
 }
 
-body {
-  background-color: #AF8041;
+@font-face {
+  font-family: "MyFont";
+  src: url("continuous.ttf") format("truetype");
 }
 
-h1 {
-  border-bottom: 1px solid #051507;
+header,
+section,
+nav,
+article,
+footer,
+aside {
+  display: block;
 }
 
-.main-title {
-  background-color: rgb(255, 255, 255, 0.5);
-
+ul,
+ol {
+  list-style: none;
 }
 
-article {
-  background-image: url("https://image.yes24.com/goods/111086542/XL");
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  background-size: 100% 100%;
+img {
+  max-width: 100%;
 }
 
-.web-name {
-  text-decoration-line: none;
-  color: black;
-  background-color: #AF8041;
-  display: inline-block;
-
+.header-menu {
+  display: flex;
+  /*logo랑 <ul>을 띄어준다. 왜?*/
+  background-color: #553830;
+  border-bottom: 1px solid #F0F8FF;
 }
 
-.reviwe-title {
-  text-decoration-line: none;
-  color: black;
-  background-color: #AF8041;
-  display: inline-block;
+#logo {
+  font-family: "MyFont";
+  line-height: 2;
+  font-weight: 700;
 }
+
+#navigation-bar {
+  display: flex;
+  font-family: "MyFont";
+  font-size: 12px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+/*<ul>에 display flex를 적용해야 <li>에 적용이 된다.*/
+
+#header a {
+  text-decoration: none;
+  color: #F0F8FF;
+  font-size: 2rem;
+}
+
+#main-page-login-button {
+  position: fixed;
+  top: 30%;
+  right: 50%;
+  padding: 7px;
+  width: 70px;
+  height: 70px;
+  /*width와 height를 작게 했을 때 왜 text가 원 밖으로 벗어 날까?*/
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+}
+
+#main-page-login-button>.login-button {
+  border-radius: 30px;
+}
+
+/*뭐가 문제인 거지? 왜 생각 대로 안되지?*/
